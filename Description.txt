@@ -1,7 +1,4 @@
 
-Learn Vue.js (RU) - Компоненты #3 - объект Vue для хранения состояния.
-https://www.youtube.com/watch?v=eEHisLs3wV8
+Learn Vue.js (RU) - Компоненты #5 - Динамические компоненты
 
-
-Learn Vue.js (RU) - Компоненты #4 - Слоты
-https://www.youtube.com/watch?v=rve1Tbq-BxE
+https://www.youtube.com/watch?v=UZabVD3AJnk

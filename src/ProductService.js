@@ -8,27 +8,27 @@ export default new Vue({
         products: [
                     {
                         id: 1,
-                        title: 'Product #1',
-                        price: 50,
-                        qt: 1000
+                        title: 'Sony Xperia XZ Premium Dual SIM (red)',
+                        price: 1350,
+                        qt: 16
                     },
                     {
                         id: 2,
-                        title: 'Product #2',
-                        price: 100,
-                        qt: 456
+                        title: 'Sony Xperia XZ Premium Deepsea Black [G8141]',
+                        price: 1250,
+                        qt: 19
                     },
                     {
                         id: 3,
-                        title: 'Product #3',
-                        price: 23,
-                        qt: 2345
+                        title: 'Sony Xperia XZ1 Dual',
+                        price: 1200,
+                        qt: 20
                     },
                     {
                         id: 4,
-                        title: 'Product #4',
-                        price: 23,
-                        qt: 2345
+                        title: 'Sony Xperia XZ1 Compact (blue)',
+                        price: 1050,
+                        qt: 45
                     }
               ]
       },
@@ -36,6 +36,15 @@ export default new Vue({
           viewSashaDetails(id) {
                 let productToView = _.find(this.products, {id: id});
                 this.$emit('viewDetails', productToView);
+          },
+          addProduct(title, price, qt) {
+            let id = this.products[this.products.length - 1].id + 1;
+            this.products.push({
+              id,
+              title,
+              price,
+              qt
+            })
           }
       }
 })

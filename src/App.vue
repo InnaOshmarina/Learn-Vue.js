@@ -8,7 +8,13 @@
     </my-header>
     <div class="container">
       <products></products>
-      <product-details></product-details>
+      <div>
+          <button type="button" class="btn btn-warning" @click="mode=(mode == 'view' ? 'add' : 'view')">Mode: {{ mode }}</button>
+          <keep-alive>
+             <component :is="componentName"></component>
+          </keep-alive>
+      </div>
+
     </div>
   </div>
 </template>
@@ -16,18 +22,26 @@
 <script>
 import ProductsList from './ProductsList.vue'
 import ProductDetails from './ProductDetails.vue'
+import ProductAdd from './ProductAdd.vue'
 import myHeader from './Header.vue'
 
 export default {
   data () {
     return {
-      secondPart: 'Second Part'
+      secondPart: 'Second Part',
+      mode: 'view'
+    }
+  },
+  computed: {
+    componentName() {
+      return this.mode == 'view' ? 'ProductDetails' : 'ProductAdd';
     }
   },
   components: {
     myHeader,
     'products': ProductsList,
-    ProductDetails
+    ProductDetails,
+    ProductAdd
   }
 }
 </script>

@@ -8,7 +8,7 @@
           <slot name="subtitle"></slot>
       </div>
       <div>
-          <slot name="copyright"><p>Inna Oshmarina - the best girl!</p></slot>
+          <slot name="copyright"><p>Inna Oshmarina - Inc.</p></slot>
       </div>
 
     </div>

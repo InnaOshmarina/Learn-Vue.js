@@ -3,15 +3,15 @@
     <h2>Product Detail</h2>
     <form>
        <div>
-           <label for="title">Title</label>
+           <label for="title">Title: </label>
            <span>{{ product.title }}</span>
         </div>
         <div>
-           <label for="price">Price</label>
-           <span>${{ product.price }}</span>
+           <label for="price">Price, </label>
+           <span>$: {{ product.price }}</span>
         </div>
         <div>
-           <label for="qt">Quantity</label>
+           <label for="qt">Quantity: </label>
            <span>{{ product.qt }}</span>
         </div>
     </form>
@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     .product {
             width: 500px;
             border: 1px solid red;

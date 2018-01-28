@@ -1,7 +1,7 @@
 <template>
       <div class="card">
           <div class="card-body">
-              <h4 class="card-title">{{ index }} {{ product.title }}</h4>
+              <h4 class="card-title">{{ index }}. {{ product.title }}</h4>
               <p class="card-text">{{ product.qt }} items for ${{ product.price }}</p>
               <a href="#" class="btn btn-primary" @click="viewDetailsClicked">View Details</a>
           </div>
