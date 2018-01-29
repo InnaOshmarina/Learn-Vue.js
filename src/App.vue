@@ -14,7 +14,6 @@
              <component :is="componentName"></component>
           </keep-alive>
       </div>
-
     </div>
   </div>
 </template>

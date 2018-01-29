@@ -1,4 +1,4 @@
 
-Learn Vue.js (RU) - Компоненты #5 - Динамические компоненты
+Learn Vue.js (RU) - Lifecycle Hooks
 
-https://www.youtube.com/watch?v=UZabVD3AJnk
+https://www.youtube.com/watch?v=8WoQIm4jLzU
